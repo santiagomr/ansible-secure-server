@@ -1,0 +1,11 @@
+---
+
+- name: fail2ban
+  src: oefenweb.fail2ban
+  # src: https://github.com/Oefenweb/ansible-fail2ban.git
+  # scm: git
+
+- name: ufw
+  src: oefenweb.ufw
+  # src: https://github.com/Oefenweb/ansible-ufw.git
+  # scm: git
