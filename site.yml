@@ -1,0 +1,16 @@
+---
+## https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html
+## https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html
+
+- name: Secure Server Playbook
+  hosts: all
+  remote_user: user-with-access
+  become: true
+  become_user: root
+  become_method: sudo
+  gather_facts: yes
+
+  roles:
+    - role: ssh_server
+    - role: fail2ban
+    # - role: ufw
