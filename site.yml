@@ -11,6 +11,6 @@
   gather_facts: yes
 
   roles:
-    - role: ssh_server
-    - role: fail2ban
-    # - role: ufw
+    - role: santiagomr.ssh_server
+    - role: oefenweb.fail2ban
+    # - role: oefenweb.ufw
