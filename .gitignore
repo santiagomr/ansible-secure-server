@@ -1,0 +1,7 @@
+hosts
+
+host_vars/*
+!host_vars/example.santiagomr.com/
+
+files/etc/motd/*
+!files/etc/motd/example

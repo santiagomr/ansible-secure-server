@@ -1,0 +1,30 @@
+---
+
+ssh_server_listen_port: 22
+ssh_server_listen_protocol: 2
+
+ssh_server_login_grace_time: 20
+ssh_server_permit_root_login: "no" # prohibit-password - yes - no
+ssh_server_strict_modes: "yes"
+ssh_server_max_auth_tries: 3
+ssh_server_max_sessions: 2
+ssh_server_pubkey_authentication: "yes"
+ssh_server_password_authentication: "no"
+ssh_server_permit_empty_passwords: "no"
+
+ssh_server_use_PAM: "yes"
+
+ssh_server_allow_users:
+  - a-simple-human
+
+ssh_server_allow_tcp_forwarding: "yes"
+
+ssh_server_x11forwarding: "no"
+
+ssh_server_permit_TTY: "yes"
+ssh_server_print_motd: "no"
+ssh_server_print_last_log: "yes"
+ssh_server_TCP_keep_alive: "no"
+ssh_server_client_alive_interval: 60
+ssh_server_client_alive_count_max: 2
+ssh_server_max_startups: "5:90:6"

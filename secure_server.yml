@@ -4,7 +4,6 @@
 
 - name: Secure Server Playbook
   hosts: all
-  remote_user: user-with-access
   become: true
   become_user: root
   become_method: sudo

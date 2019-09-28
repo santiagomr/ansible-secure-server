@@ -1,0 +1,23 @@
+---
+all:
+  children:
+    cluster1:
+      hosts:
+        first.santiagomr.com:
+          ansible_ssh_port: 22
+          ansible_ssh_user: a-simple-human
+          ansible_sudo_pass: put-it-from-the-vaults!
+        second.santiagomr.com:
+          ansible_ssh_port: 22
+          ansible_ssh_user: a-simple-human
+          ansible_sudo_pass: put-it-from-the-vaults!
+    cluster2:
+      hosts:
+        third.santiagomr.com:
+          ansible_ssh_port: 22
+          ansible_ssh_user: a-simple-human
+          ansible_sudo_pass: put-it-from-the-vaults!
+        fourth.santiagomr.com:
+          ansible_ssh_port: 22
+          ansible_ssh_user: a-simple-human
+          ansible_sudo_pass: put-it-from-the-vaults!
