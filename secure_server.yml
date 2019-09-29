@@ -12,4 +12,4 @@
   roles:
     - role: santiagomr.ssh_server
     - role: oefenweb.fail2ban
-    # - role: oefenweb.ufw
+    - role: oefenweb.ufw
