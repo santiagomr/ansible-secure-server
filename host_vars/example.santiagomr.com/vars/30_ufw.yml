@@ -11,6 +11,24 @@ ufw_rules:
     to_port: "{{ ssh_server_listen_port }}"
     protocol: tcp
 
+      # HTTP/HTTPS from any interface
+  - rule: allow
+    to_port: 80
+    protocol: tcp
+  - rule: allow
+    to_port: 443
+    protocol: tcp
+
+      # Any protocol. TCP and UDP
+  - rule: allow
+    to_port: 53
+
+      # Only from an internal network
+  - rule: allow
+    to_port: 8080
+    from_ip: 10.100.0.0/16
+    protocol: tcp
+
 # /etc/default/ufw
 ufw_etc_default_ipv6: true
 ufw_etc_default_default_input_policy: DROP

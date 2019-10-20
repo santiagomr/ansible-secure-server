@@ -11,5 +11,8 @@
 
   roles:
     - role: santiagomr.ssh_server
+      tags: ssh
     - role: oefenweb.fail2ban
+      tags: fail2ban
     - role: oefenweb.ufw
+      tags: ufw
